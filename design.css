@@ -7,7 +7,7 @@ h1{
 h2{
   text-decoration: underline #63C149 wavy 2px;
 }
-/* die untersreichung is gestrichelt*/
+/* die unterstreichung is gestrichelt*/
 h3{
   text-decoration: underline #63C149 dashed 3px;
 }
@@ -21,7 +21,7 @@ body
     font-family: "Bungee", sans-serif; /* Nutzt die in HTML importierte Bungee Schrift als sans-serif Format */
     color: white; /* schrift im body immer weiß */
     text-align: center; /* Setzt den Text in die Mitte der Seite */
-    background-color: #1f1f1f; /* hintergrundfabe schwartz */
+    background-color: #1f1f1f; /* hintergrundfabe dunkelgrau */
 }
 
 /* Navbar */
