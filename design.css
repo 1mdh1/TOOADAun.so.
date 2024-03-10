@@ -1,0 +1,248 @@
+/* font-size macht die größe vom der überschrift (h1) und text unterstreichung  is das andere */
+h1{
+    font-size: 350%;
+    text-decoration: underline #63C149 6px;
+}
+/* die untersreichung is wellig*/
+h2{
+  text-decoration: underline #63C149 wavy 2px;
+}
+/* die untersreichung is gestrichelt*/
+h3{
+  text-decoration: underline #63C149 dashed 3px;
+}
+/* Nimmt Roboto als Font und sonst Noto Color Emoji */
+p{
+  font-family: "Roboto", sans-serif, "Noto Color Emoji", sans-serif;
+}
+
+body
+{
+    font-family: "Bungee", sans-serif; /* Nutzt die in HTML importierte Bungee Schrift als sans-serif Format */
+    color: white; /* schrift im body immer weiß */
+    text-align: center; /* Setzt den Text in die Mitte der Seite */
+    background-color: #1f1f1f; /* hintergrundfabe schwartz */
+}
+
+/* Navbar */
+
+ul {
+  list-style-type: none; /* Setzt die Vorzeichen der liste auf "none" (nichts) und löscht sie damit */
+  margin: 0;  /* formatiert die Navbar und setzt den Abstand auf 0 */
+  padding: 0; /* ähnlich zu margin ⬆ */
+  background-color: #2b2b2b; /* Setzt die Hintergrund Farbe auf ein abhebendes Schwarz (#2b2b2b) als HEX wert, das sich unterscheidet vom Hintergrund des Body's (#1f1f1f) als HEX wert */
+  filter: drop-shadow(7.5px 7.5px 3px hsla(0, 0%, 0%, 0.1)); /* Fügt einen Schatten der Navbar hinzu */
+  border-radius: 10px; /* Rundung der Ecken */
+  display: inline-flex; /* ein Atribut, welches die Navbar cropt und in sich flexibel macht */
+  align-items: center; /* Zentriert die Items */
+}
+
+li {
+  margin-inline: 10px; /* Abstand in der Navbar zwichen den Einzelnen Elementen (inline) */
+}
+
+li a {
+  display: block; /* lässt die Elemente in einem Block anzeigen (wird so formatiert) */
+  color: white; /* Jede Schrift im a element der Liste von der Navbar ist weiß */
+  text-align: center; /* Zentriert den Text im vorgesehenen Block */
+  padding: 14px 16px; /* Abstand in Höhe und Breite*/ 
+  text-decoration: none; /* Keine Text Deko (Nicht unterstrichen oder unterkringelt oder so) */
+  transition: transform 0.25s; /* Um den übergang zu verschönern und eine Einheitliche animation zu bieten mit transform */
+  border-radius: 10px; /* Gerundete Ecken */
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(31, 31, 31); /* Farbe hinter dem Logo beim Hovern */
+  font-weight: bold; /* Macht wenn Schrift vorhanden und bold ging bold beim Hovern*/
+  transform: scale(1.08); /* Verändert die Größe mit der vorher gestzten 25ms transition (übergang) auf 108% */
+}
+
+li img {
+  height: 35px; /* größe des Bildes*/
+}
+
+.active {
+  background-color: #58A943; /* Aktive Farbe als Hintergrund der Aktiven Seite */
+  font-weight: bold; /* setzt Font bold, wenn aktiv und vorhanden */
+}
+
+/* Navbar Ende */
+
+
+/* Auswahl des Textes */
+
+/*chromium code*/
+::selection {
+  color: #58A943; /* Farbe des Textmarkierens */
+  background: #417e3777; /* Farbe als Kontrast und Hintergrund vom Markieren */
+}
+
+/* firefox code */
+::-moz-selection {
+  color: #58A943;
+  background: #417e3777;
+}
+
+/* Auswahl des Textes Ende */
+
+.flex-container-large-content {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.flex-container-large-content > div {
+  filter: drop-shadow(7.5px 7.5px 3px hsla(0, 0%, 0%, 0.1));
+  background-color: #2b2b2b;
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.flex-container-large-content p {
+  color: white;
+}
+
+.flex-container-large-content img {
+  width: 80%;
+  margin-bottom: 8%;
+  border-radius: 10px;
+}
+
+.flex-container-medium-content {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.flex-container-medium-content > div {
+  outline: 3px dashed #ffffff28;
+  filter: drop-shadow(7.5px 7.5px 3px hsla(0, 0%, 0%, 0.15));
+  background-color: #2b2b2b;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.flex-container-medium-content p {
+  color: white;
+}
+
+.flex-container-medium-content img {
+  width: 80%;
+  margin-bottom: 8%;
+  border-radius: 10px;
+}
+
+
+.flex-container-small-content {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.flex-container-small-content > div {
+  background-color: #2b2b2b;
+  width: 125px;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.flex-container-small-content p {
+  color: white;
+}
+
+.flex-container-small-content img {
+  width: 80%;
+  margin-bottom: 8%;
+  border-radius: 10px;
+}
+
+.flex-container-general-content {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.flex-container-general-content > div {
+  width: 85%;
+  margin: 10px;
+  background-color: #2b2b2b;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.flex-container-general-content p {
+  color: white;
+}
+
+.flex-container-general-content img {
+  width: 80%;
+  margin-bottom: 8%;
+  border-radius: 10px;
+}
+
+.container-general-content {
+  min-width: 1080px; 
+  display: grid;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.container-general-content > div {
+  align-items: center;
+
+  text-align: center;
+  background-color: #313131;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+} 
